@@ -7,6 +7,7 @@ This requires [Godot version 3.3](https://godotengine.org/download/archive/3.4-s
  - Added Buttons to instantly set maximum stats.
  - a node change for the buttons
  - added an android sdk thingy, idk
+ - Fixed bug with reset button (now it resets bust correctly)
  
  ## How I did this
  I found a tool called [gdsdecomp.](https://github.com/bruvzg/gdsdecomp) 
