@@ -5,6 +5,8 @@ This requires [Godot version 3.3](https://godotengine.org/download/archive/3.4-s
 along with android sdk, and opensdk for android compilation.
 
 the apk will give you permission warnings, its safe to ignore it. (or just build it from the source)
+
+I will move things over to godot 4 a little later.
 ## Changes
 
  - Added Buttons to instantly set maximum stats.
