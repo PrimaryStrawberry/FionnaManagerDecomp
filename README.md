@@ -8,9 +8,12 @@ the apk will give you permission warnings, its safe to ignore it. (or just build
 ## Changes
 
  - Added Buttons to instantly set maximum stats.
- - a node change for the buttons
- - added an android sdk thingy, idk
+ - a node change for the buttons (from Node2D -> VBoxContainer)
+ - added android compilation
  - Fixed bug with reset button (now it resets bust correctly)
+
+> [!IMPORTANT]
+> If you want more quality of life features, feel free to ask! I will make a seporate branch!
  
  ## How I did this
  I found a tool called [gdsdecomp.](https://github.com/bruvzg/gdsdecomp) 
