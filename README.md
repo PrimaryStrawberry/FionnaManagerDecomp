@@ -13,7 +13,7 @@ the apk will give you permission warnings, its safe to ignore it. (or just build
  - Fixed bug with reset button (now it resets bust correctly)
 
 > [!IMPORTANT]
-> If you want more quality of life features, feel free to ask! I will make a seporate branch!
+> If you want more quality of life features, feel free to ask! I will make a separate branch!
  
  ## How I did this
  I found a tool called [gdsdecomp.](https://github.com/bruvzg/gdsdecomp) 
