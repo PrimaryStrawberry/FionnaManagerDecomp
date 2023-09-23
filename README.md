@@ -17,11 +17,17 @@ I will move things over to godot 4 a little later.
 - Bust size can now grow forever (scales the last frame)
 - Added a new button "+ Bust" that increases the bust size by .5
 - Repositioned the anchor for the breast sprite to allow for smoother scaling.
+ ### In Development:
+- over 30 warnings and bugs fixed.
+- commented out refrences to a "Muscle Curse" (only thing left over was the pulsing animation, I might reuse this for later endevors)
+- Added a "BustContainer" node to used, instead of directly scaling the breast sprite.
+- renamed some nodes and scripts to help with readability.
+- fixed the issue where the console floods with errors when breasts get too big.
 
 ## Changes
 
  - Added Buttons to instantly set maximum stats.
- - a node change for the buttons (from Node2D -> VBoxContainer)
+ - a node change for the button container (from Node2D -> VBoxContainer)
  - added android compilation
  - Fixed bug with reset button (now it resets bust correctly)
 
