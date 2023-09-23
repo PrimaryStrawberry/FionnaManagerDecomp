@@ -31,10 +31,6 @@ I will move things over to godot 4 a little later.
 - renamed some nodes and scripts to help with readability.
 - fixed the issue where the console floods with errors when breasts get too big.
 - fixed issue where the background was not aligned with the viewport
-
-
-
-
  
  ## How I did this
  I found a tool called [gdsdecomp.](https://github.com/bruvzg/gdsdecomp) 
