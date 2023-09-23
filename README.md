@@ -7,6 +7,14 @@ along with android sdk, and opensdk for android compilation.
 the apk will give you permission warnings, its safe to ignore it. (or just build it from the source)
 
 I will move things over to godot 4 a little later.
+
+## Enhanced Version Features:
+
+- Bust size is now interpolated
+- Bust size can now grow forever (scales the last frame)
+- Added a new button "+ Bust" that increases the bust size by .5
+- Repositioned the anchor for the breast sprite to allow for smoother scaling.
+
 ## Changes
 
  - Added Buttons to instantly set maximum stats.
