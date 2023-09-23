@@ -11,6 +11,13 @@ I will move things over to godot 4 a little later.
 > [!IMPORTANT]
 > If you have a cool feature idea please share it, I can do just about anything except adding more art!
 
+## Original Build Changes
+
+ - Added Buttons to instantly set maximum stats.
+ - a node change for the button container (from Node2D -> VBoxContainer)
+ - added android compilation
+ - Fixed bug with reset button (now it resets bust correctly)
+
 ## Enhanced Version Features:
 
 - Bust size is now interpolated
@@ -25,12 +32,7 @@ I will move things over to godot 4 a little later.
 - fixed the issue where the console floods with errors when breasts get too big.
 - fixed issue where the background was not aligned with the viewport
 
-## Changes
 
- - Added Buttons to instantly set maximum stats.
- - a node change for the button container (from Node2D -> VBoxContainer)
- - added android compilation
- - Fixed bug with reset button (now it resets bust correctly)
 
 
  
