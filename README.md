@@ -8,6 +8,9 @@ the apk will give you permission warnings, its safe to ignore it. (or just build
 
 I will move things over to godot 4 a little later.
 
+> [!IMPORTANT]
+> If you have a cool feature idea please share it, I can do just about anything except adding more art!
+
 ## Enhanced Version Features:
 
 - Bust size is now interpolated
@@ -22,8 +25,7 @@ I will move things over to godot 4 a little later.
  - added android compilation
  - Fixed bug with reset button (now it resets bust correctly)
 
-> [!IMPORTANT]
-> If you want more quality of life features, feel free to ask! I will make a separate branch!
+
  
  ## How I did this
  I found a tool called [gdsdecomp.](https://github.com/bruvzg/gdsdecomp) 
