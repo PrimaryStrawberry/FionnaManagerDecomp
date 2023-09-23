@@ -24,13 +24,12 @@ I will move things over to godot 4 a little later.
 - Bust size can now grow forever (scales the last frame)
 - Added a new button "+ Bust" that increases the bust size by .5
 - Repositioned the anchor for the breast sprite to allow for smoother scaling.
- ### In Development:
 - over 30 warnings and bugs fixed.
 - commented out refrences to a "Muscle Curse" (only thing left over was the pulsing animation, I might reuse this for later endevors)
-- FIXED THE JIGGLE PHYSICS! this took a bit, but I am very happy it works again.
 - renamed some nodes and scripts to help with readability.
 - fixed the issue where the console floods with errors when breasts get too big.
 - fixed issue where the background was not aligned with the viewport
+
  
  ## How I did this
  I found a tool called [gdsdecomp.](https://github.com/bruvzg/gdsdecomp) 
