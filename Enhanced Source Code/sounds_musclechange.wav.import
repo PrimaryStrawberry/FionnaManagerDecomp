@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sounds_musclechange.wav-096d96ae085f46fb41cc619283ffef69.sample"
+
+[deps]
+
+source_file="res://sounds_musclechange.wav"
+dest_files=[ "res://.import/sounds_musclechange.wav-096d96ae085f46fb41cc619283ffef69.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
