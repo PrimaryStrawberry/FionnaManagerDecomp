@@ -6,16 +6,16 @@ onready var passivetimer = get_node("PassiveTimer")
 onready var dispatchtimer = get_node("Missions/ReturnDelay")
 onready var growthspurt = get_node("Growth")
 onready var growthtimer = get_node("Growth/GrowthPeak")
-onready var burstbounce = get_node("/root/Node2D/Fionna/Body/BustContainer/Bust/Bounce")
+onready var burstbounce = get_node("BustContainer/Bust/Bounce")
 
 
 onready var curseicon = $"/root/Node2D/Fionna/BoobCurse/AnimationPlayer"
 onready var cursetimer = get_node("CurseTimer")
-onready var musclecursetimer = get_node("MuscleCursePlayer/MuscleCurseTimer")
-onready var musclecurseanim = get_node("MuscleCursePlayer")
+#onready var musclecursetimer = get_node("MuscleCursePlayer/MuscleCurseTimer") #got rid of various muscle player refs, as this stuff does not exist.
+#onready var musclecurseanim = get_node("MuscleCursePlayer")
 #onready var musclecursedelay = get_node("MuscleCursePlayer/MuscleCurseDelay") this node just flat out did not exist.
 onready var curse_boob = 2
-onready var curse_muscle = 0
+#onready var curse_muscle = 0
 var curse_chance = 0
 
 export  var strength = 32
@@ -27,6 +27,7 @@ func _ready():
 	timer.start()
 	passivetimer.set_wait_time(0.2)
 	passivetimer.start()
+	
 
 	
 func _on_Timer_timeout():
@@ -104,6 +105,7 @@ func _on_GrowthPeak_timeout()->void :
 	var curse = 0
 	#var targetbust = 0 another unused variable.
 	burstbounce.play("burstbounce")
+	print(str(burstbounce.name))
 	get_node("fionna_head").frame = 3
 	
 	if get_node("Missions").musclemission == 1:
@@ -130,7 +132,7 @@ func _on_GrowthPeak_timeout()->void :
 		strength += 2
 		$"/root/Node2D/Sounds/S_SizeUp".playing = true
 		#curse_muscle == 1 there was plans for a muscle curse! WHOA!
-		musclecursetimer.start()
+		#musclecursetimer.start()
 		print("Buff CURSED!!")
 		
 		
@@ -159,18 +161,20 @@ func _on_CurseTimer_timeout()->void :
 		$"/root/Node2D/Sounds/S_CurseHit".playing = true
 		print("Intense Curse!" + str(get_node("BustContainer/Bust").bust))
 	else :
+		var pitch = (2 - (get_node("BustContainer/Bust").bust / 20))
 		get_node("BustContainer/Bust").bust += 0.5
 		burstbounce.play("idlejiggle")
 		$"/root/Node2D/Sounds/S_CurseHit".playing = true
-		$"/root/Node2D/Sounds/S_CurseHit".pitch_scale = (2 - (get_node("BustContainer/Bust").bust / 20))
+		if pitch > 0: #added this in to prevent the console from getting flooded with errors
+			$"/root/Node2D/Sounds/S_CurseHit".pitch_scale = pitch
 		print("You're Cursed" + str(get_node("BustContainer/Bust").bust))
 
 
-func _on_MuscleCurseTimer_timeout()->void :
-		strength += 0.2
-		musclecurseanim.play("MuscleCurse")
-		$"/root/Node2D/Sounds/S_CurseHit".playing = true
-		$"/root/Node2D/Sounds/S_CurseHit".pitch_scale = (2 - (strength / 50))
-		timer.stop()
+#func _on_MuscleCurseTimer_timeout()->void :
+		#strength += 0.2
+		#musclecurseanim.play("MuscleCurse")
+		#$"/root/Node2D/Sounds/S_CurseHit".playing = true
+		#$"/root/Node2D/Sounds/S_CurseHit".pitch_scale = (2 - (strength / 50))
+		#timer.stop()
 
 

@@ -13,3 +13,6 @@ func _on_GrowthPeak_timeout()->void :
 	$"/root/Node2D/Sounds/S_MuscleChange".playing = true
 	$"/root/Node2D/Sounds/S_MuscleChange".pitch_scale = (2 - strength / 50)
 
+
+
+

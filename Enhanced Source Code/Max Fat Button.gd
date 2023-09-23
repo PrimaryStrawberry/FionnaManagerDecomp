@@ -17,7 +17,7 @@ func _ready()->void :
 func _on_Button_pressed()->void :
 	$"/root/Node2D/Fionna/Body".strength = 0
 	print($"/root/Node2D/Fionna/Body".strength)
-	#$"/root/Node2D/Fionna/Body/Bust".bust = 100
+	#$"/root/Node2D/Fionna/Body/BustContainer/Bust".bust = 100
 	$"/root/Node2D/Fionna/Body".curse_boob = 0
 	cursetimer.stop()
 	

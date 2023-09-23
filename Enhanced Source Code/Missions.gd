@@ -70,7 +70,7 @@ func _on_FlattenMission()->void :
 	flattenmission = 1
 	missionselected = 1
 
-func _on_ReturnTween_tween_completed(object:Object, key:NodePath)->void :
+func _on_ReturnTween_tween_completed(_object:Object, _key:NodePath)->void :
 	musclemission = 0
 	fatmission = 0
 	boobmission = 0

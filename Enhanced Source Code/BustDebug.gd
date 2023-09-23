@@ -18,4 +18,4 @@ func _update():
 
 
 func _on_Add_Bust_pressed():
-	text = "Bust:" + str($"/root/Node2D/Fionna/Body/Bust".bust)
+	text = "Bust:" + str($"/root/Node2D/Fionna/Body/BustContainer/Bust".bust)

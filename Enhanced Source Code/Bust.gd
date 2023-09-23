@@ -1,14 +1,13 @@
 extends AnimatedSprite
 
 var bust = 1
-
+#onready var BustContainer = get_node("/root/Node2D/Fionna/Body/BustContainer")
 
 func _ready()->void :
 	pass
 	
-func _process(delta)->void :
+func _process(_delta)->void :
 	self.scale = Vector2(1,1)
-	var scale
 	var highstrength = 0
 	var lowstrength = 0
 	var physique = $"/root/Node2D/Fionna/Body".frame
@@ -51,7 +50,7 @@ func _process(delta)->void :
 	#print("scale:" + str(self.scale))
 	pass
 
-
+#added for the frame interpolation, feel free to steal this code
 func interpolateScale(input_value, input_min, input_max, output_min, output_max):
 	 # Ensure input_value is within the input range
 	input_value = clamp(input_value, input_min, input_max)

@@ -58,7 +58,7 @@ func _on_ReturnTween_tween_completed(_object, _key)->void :
 	text = growing[response]
 	
 	
-func _on_Growth_animation_finished(anim_name:String)->void :
+func _on_Growth_animation_finished(_anim_name:String)->void :
 	responsedelay.set_wait_time(2)
 	responsedelay.start()
 
@@ -77,7 +77,7 @@ func _on_ResponseDelay_timeout()->void :
 		noneneutral = 0
 		print("comfybustyworking")
 		
-	elif get_parent().get_node("Body/Bust").bust >= 10 and boobtalk == 0:
+	elif get_parent().get_node("Body/BustContainer/Bust").bust >= 10 and boobtalk == 0:
 		text = (busty[response])
 		noneneutral = 0
 		print("bustworking")

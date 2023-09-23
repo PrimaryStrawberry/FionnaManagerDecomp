@@ -1,7 +1,7 @@
 extends Sprite
 
 onready var passivetimer = get_node("BlinkTimer")
-onready var updatetimer = get_node("Eyes/UpdateTimer")
+#onready var updatetimer = get_node("Eyes/UpdateTimer") #this just does not exist
 onready var blinkplayer = get_node("EyeBlink")
 onready var moveeyes = 0
 
@@ -32,7 +32,7 @@ func _on_BlinkTimer_timeout()->void :
 		passivetimer.start()
 
 
-func _process(delta:float)->void :
+func _process(_delta:float)->void :
 	if ((get_parent().strength <= 48)):
 		set_offset(Vector2(0, 0))
 		moveeyes = 0
@@ -41,12 +41,12 @@ func _process(delta:float)->void :
 		moveeyes = 1
 		
 
-func _on_Growth_animation_started(anim_name:String)->void :
+func _on_Growth_animation_started(_anim_name:String)->void :
 	passivetimer.stop()
 	blinkplayer.play("Closed")
 
 
-func _on_Growth_animation_finished(anim_name:String)->void :
+func _on_Growth_animation_finished(_anim_name:String)->void :
 	frame = 3
 	passivetimer.set_wait_time((randf() * 3))
 	passivetimer.start()

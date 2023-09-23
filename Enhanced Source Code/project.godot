@@ -10,9 +10,9 @@ config_version=4
 
 [application]
 
-config/name="Fionna Manager V 01"
+config/name="Fionna Manager Enhanced V02"
 run/main_scene="res://Node2D.tscn"
-config/icon="res://icon.png"
+config/icon="res://Android_Icon.png"
 
 [display]
 
