@@ -7,15 +7,30 @@ along with android sdk, and opensdk for android compilation.
 the apk will give you permission warnings, its safe to ignore it. (or just build it from the source)
 
 I will move things over to godot 4 a little later.
-## Changes
+
+> [!IMPORTANT]
+> If you have a cool feature idea please share it, I can do just about anything except adding more art!
+
+## Original Build Changes
 
  - Added Buttons to instantly set maximum stats.
- - a node change for the buttons (from Node2D -> VBoxContainer)
+ - a node change for the button container (from Node2D -> VBoxContainer)
  - added android compilation
  - Fixed bug with reset button (now it resets bust correctly)
 
-> [!IMPORTANT]
-> If you want more quality of life features, feel free to ask! I will make a separate branch!
+## Enhanced Version Features:
+
+- Bust size is now interpolated
+- Bust size can now grow forever (scales the last frame)
+- Added a new button "+ Bust" that increases the bust size by .5
+- Repositioned the anchor for the breast sprite to allow for smoother scaling.
+ ### In Development:
+- over 30 warnings and bugs fixed.
+- commented out refrences to a "Muscle Curse" (only thing left over was the pulsing animation, I might reuse this for later endevors)
+- FIXED THE JIGGLE PHYSICS! this took a bit, but I am very happy it works again.
+- renamed some nodes and scripts to help with readability.
+- fixed the issue where the console floods with errors when breasts get too big.
+- fixed issue where the background was not aligned with the viewport
  
  ## How I did this
  I found a tool called [gdsdecomp.](https://github.com/bruvzg/gdsdecomp) 
