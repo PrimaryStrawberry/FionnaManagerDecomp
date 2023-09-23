@@ -20,7 +20,7 @@ I will move things over to godot 4 a little later.
  ### In Development:
 - over 30 warnings and bugs fixed.
 - commented out refrences to a "Muscle Curse" (only thing left over was the pulsing animation, I might reuse this for later endevors)
-- Added a "BustContainer" node to used, instead of directly scaling the breast sprite.
+- Added a "BustContainer" node to be used instead of directly scaling the breast sprite. (supposed to let the jiggle work, but no dice..)
 - renamed some nodes and scripts to help with readability.
 - fixed the issue where the console floods with errors when breasts get too big.
 - fixed issue where the background was not aligned with the viewport
