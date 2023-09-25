@@ -1,9 +1,11 @@
 # Fionna Manager Decompilation
 This is a github repo for this games full decomp. I found this game on reddit [here](https://www.reddit.com/r/ExpansionHentai/comments/phf8d9/f_someone_made_a_free_little_growth_game/)(NSFW warning) , **I did not make this.**  all credit goes to [@bulumblebee](https://twitter.com/bulumblebee) on Twitter/X. 
-### Notes
+
+### Compiling from Source
 This requires [Godot version 3.3](https://godotengine.org/download/archive/3.4-stable/) (I used specifically 3.3.4)
 along with android sdk, and opensdk for android compilation.
 
+### Notes
 the apk will give you permission warnings, its safe to ignore it. (or just build it from the source)
 
 I will move things over to godot 4 a little later.
