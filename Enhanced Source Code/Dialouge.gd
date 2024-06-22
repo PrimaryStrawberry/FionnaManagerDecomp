@@ -68,12 +68,12 @@ func _on_ResponseDelay_timeout()->void :
 	var noneneutral = 1
 	
 	if get_parent().get_node("Body").frame >= 7 and get_parent().get_node("Body/Bust").bust < 10:
-		text = buff[response]
+		text = (buff[response])
 		noneneutral = 0
 		print("buffworking")
 		
 	elif get_parent().get_node("Body").frame >= 7 and get_parent().get_node("Body/Bust").bust >= 10:
-		text = bustycomfy[response]
+		text = (bustycomfy[response])
 		noneneutral = 0
 		print("comfybustyworking")
 		
