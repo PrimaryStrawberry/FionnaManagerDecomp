@@ -5,10 +5,10 @@ This is a github repo for this games full decomp. I found this game on reddit [h
 The original source code requires [Godot version 3.3](https://godotengine.org/download/archive/3.4-stable/) (I used specifically 3.3.4)
 along with android sdk, and opensdk for android compilation.
 
-The enhanced version uses Godot 4.4
+The enhanced version now uses [Godot 4.4.1](https://godotengine.org/download/archive/4.4.1-stable/)
 
 for compiling apks, you need a debug.keystore. generate one with this command (assumming you have installed android studio / android sdk)
-```keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000```
+``keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000``
 
 
 ### Notes
@@ -50,6 +50,9 @@ I will move things over to godot 4 a little later.
 - prevented the next location dialog from getting cut off
 - moved clipboard UI into VBoxContainer node (only a slight visual shift)
 - Breast mLs now get calculated when using manual breast controls
+- compiled apk with x86 support - increases compatibility
+- switched desktop builds to x86 / x32 - reduces memory, increases performance, and also widens compatibility
+- linux build
 
  
  ## How I did this
