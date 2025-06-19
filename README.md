@@ -1,5 +1,5 @@
 # Fionna Manager Decompilation
-This is a github repo for this games full decomp. I found this game on reddit [here](https://www.reddit.com/r/ExpansionHentai/comments/phf8d9/f_someone_made_a_free_little_growth_game/)(NSFW warning) , **I did not make this.**  all credit goes to [@bulumblebee](https://twitter.com/bulumblebee) on Twitter/X. 
+This is a github repo for this games full decomp. I found this game on reddit [here](https://www.reddit.com/r/ExpansionHentai/comments/phf8d9/f_someone_made_a_free_little_growth_game/) (NSFW warning) , **I did not make this.**  all credit goes to [@bulumblebee](https://twitter.com/bulumblebee) on Twitter/X. 
 
 ### Compiling from Source
 This requires [Godot version 3.3](https://godotengine.org/download/archive/3.4-stable/) (I used specifically 3.3.4)
@@ -31,6 +31,19 @@ I will move things over to godot 4 a little later.
 - renamed some nodes and scripts to help with readability.
 - fixed the issue where the console floods with errors when breasts get too big.
 - fixed issue where the background was not aligned with the viewport
+
+## Enhanced V3 Features:
+
+- Godot 4.4 support
+- propper pixel scaling
+- restored commented out rng functions
+- updated tweens
+- breasts jiggle when increasing bust
+- direct breast value input
+- interpolation when updating the breast value
+- prevented the next location dialog from getting cut off
+- moved clipboard UI into VBoxContainer node (only a slight visual shift)
+- Breast mLs now get calculated when using manual breast controls
 
  
  ## How I did this
