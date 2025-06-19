@@ -7,6 +7,10 @@ along with android sdk, and opensdk for android compilation.
 
 The enhanced version uses Godot 4.4
 
+for compiling apks, you need a debug.keystore. generate one with this command (assumming you have installed android studio / android sdk)
+```keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000```
+
+
 ### Notes
 the apk will give you permission warnings, its safe to ignore it. (or just build it from the source)
 
