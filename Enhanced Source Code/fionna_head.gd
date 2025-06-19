@@ -1,9 +1,9 @@
-extends Sprite
+extends Sprite2D
 
-onready var passivetimer = get_node("BlinkTimer")
+@onready var passivetimer = get_node("BlinkTimer")
 #onready var updatetimer = get_node("Eyes/UpdateTimer") #this just does not exist
-onready var blinkplayer = get_node("EyeBlink")
-onready var moveeyes = 0
+@onready var blinkplayer = get_node("EyeBlink")
+@onready var moveeyes = 0
 
 
 
@@ -50,4 +50,3 @@ func _on_Growth_animation_finished(_anim_name:String)->void :
 	frame = 3
 	passivetimer.set_wait_time((randf() * 3))
 	passivetimer.start()
-

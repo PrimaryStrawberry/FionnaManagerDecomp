@@ -1,0 +1,51 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1750291926
+Add Bust Button.gd::GDScript::2031317371224865992::1750291903::0::1::::<>Button<><>0<>0<><>::
+Android_Icon.png::CompressedTexture2D::7527222891201733236::1750291840::1750291927::1::::<><><>0<>0<>68a43581f5b1d8f2d4636ee0160c5b18<>res://.godot/imported/Android_Icon.png-61965ea9fdbff324e756ec6089e98419.ctex::
+AnimatedSprite.gd::GDScript::2315378261948824307::1750291903::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+Body.gd::GDScript::5561522405997473608::1750291903::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+Breasts.gd::GDScript::2109605434673472457::1750291903::0::1::::<>Node<><>0<>0<><>::
+Bust.gd::GDScript::4245175169254209230::1750291903::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+BustDebug.gd::GDScript::9165841763746062869::1750291903::0::1::::<>Label<><>0<>0<><>::
+Button.gd::GDScript::4846507611745471966::1750291903::0::1::::<>Button<><>0<>0<><>::
+Clipboard.gd::GDScript::3243227057911821897::1750291903::0::1::::<>Node<><>0<>0<><>::
+default_env.tres::Environment::-1::1750291903::0::1::::<><><>0<>0<><>::
+Dialouge.gd::GDScript::4193756471828912094::1750291903::0::1::::<>Label<><>0<>0<><>::
+dpcomic.ttf::FontFile::2595757646784843304::1750291841::1750291927::1::::<><><>0<>0<>fa93da155c508d22ebcbcd2b7fe456fb<>res://.godot/imported/dpcomic.ttf-b2495c2f02ddc06de38c2c4fee048eab.fontdata::
+export_presets.cfg::TextFile::-1::1750291841::0::1::::<><><>0<>0<><>::
+Eyes.gd::GDScript::7102712906104007231::1750291903::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+fionna_body_0001.png::CompressedTexture2D::1866447121084903894::1750291841::1750291927::1::::<><><>0<>0<>a69676081bb2019b070ad0ad18ffe572<>res://.godot/imported/fionna_body_0001.png-0c01908b875c9e46e74d81c8705657c9.ctex::
+fionna_body_0002.png::CompressedTexture2D::8019051127114090778::1750291841::1750291927::1::::<><><>0<>0<>bbe3db3cfd31282518e398605007b854<>res://.godot/imported/fionna_body_0002.png-b91e27d8cb3b2c7b6d6a3d5ea9849f5f.ctex::
+fionna_bust_0001.png::CompressedTexture2D::5526819110345786188::1750291841::1750291927::1::::<><><>0<>0<>9297d692f85ad997b9bb5e85b814a835<>res://.godot/imported/fionna_bust_0001.png-847aa00bfcde53d528c57522a1930951.ctex::
+fionna_bust_0002.png::CompressedTexture2D::8228800079792648059::1750291841::1750291927::1::::<><><>0<>0<>d4e41632f25177de6b0c2c01a390b7d9<>res://.godot/imported/fionna_bust_0002.png-56914f777d3ee4bb7c868c60522ed397.ctex::
+fionna_bust_0003.png::CompressedTexture2D::7031731374231568368::1750291841::1750291927::1::::<><><>0<>0<>717d5da5570b67daeba24e64a47fefb1<>res://.godot/imported/fionna_bust_0003.png-3e52b18646bc84b9a9659835cb6600cc.ctex::
+fionna_eyes.png::CompressedTexture2D::8357013958541816805::1750291841::1750291927::1::::<><><>0<>0<>e216fef7d48118226420325d9d2c3195<>res://.godot/imported/fionna_eyes.png-50b3f9851beec0581c0136923a0d5e86.ctex::
+fionna_head.gd::GDScript::6980061963492166835::1750291903::0::1::::<>Sprite2D<><>0<>0<><>::
+fionna_head.png::CompressedTexture2D::7445442791569072178::1750291841::1750291927::1::::<><><>0<>0<>d339f011f605b97490e60d6868ce6232<>res://.godot/imported/fionna_head.png-4f402dcde9873dd0e3d0508f5b3e3798.ctex::
+gdre_export.log::TextFile::-1::1750291841::0::1::::<><><>0<>0<><>::
+GeneralInfo2.gd::GDScript::2263753792794106112::1750291903::0::1::::<>Label<><>0<>0<><>::
+GeneralInfo.gd::GDScript::7954577333107696621::1750291903::0::1::::<>Label<><>0<>0<><>::
+GUI.png::CompressedTexture2D::7166911519379459089::1750291840::1750291927::1::::<><><>0<>0<>dfb8d06de418aeb9c6a9c83af1c33e93<>res://.godot/imported/GUI.png-f478c1ec4df8950d3094d6c76be3aa7c.ctex::
+gui_icons_0001.png::CompressedTexture2D::9009499739868633186::1750291841::1750291927::1::::<><><>0<>0<>88d396bfaf027cce2e1124ed5552e94a<>res://.godot/imported/gui_icons_0001.png-b00607cd2cf94ccdc0e52d7d7663f09a.ctex::
+icon.png::CompressedTexture2D::8115207863764842278::1750291841::1750291927::1::::<><><>0<>0<>27683db8710dabecf1a2a7d46dcbb9d1<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+LeftBoob.gd::GDScript::8986666292140018680::1750291903::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+Max Bust Button.gd::GDScript::8565740160192442880::1750291903::0::1::::<>Button<><>0<>0<><>::
+Max Fat Button.gd::GDScript::8378656407422156262::1750291903::0::1::::<>Button<><>0<>0<><>::
+Max Muscle Button.gd::GDScript::2886015385936730829::1750291903::0::1::::<>Button<><>0<>0<><>::
+Missions.gd::GDScript::8157209498338403704::1750291903::0::1::::<>Node<><>0<>0<><>::
+MuscleCurse.tres::Animation::-1::1750291903::0::1::::<><><>0<>0<><>::
+Muscle_Button.gd::GDScript::6493169664687646651::1750291903::0::1::::<>Button<><>0<>0<><>::
+Node2D.tscn::PackedScene::-1::1750291903::0::1::::<><><>0<>0<><>::res://GUI.png<>res://fionna_body_0002.png<>res://Missions.gd<>res://Body.gd<>res://fionna_head.png<>res://pixel_16.tres<>res://fionna_bust_0001.png<>res://Bust.gd<>res://GeneralInfo.gd<>res://GeneralInfo2.gd<>res://pb_swriting.tres<>res://Clipboard.gd<>res://gui_icons_0001.png<>res://fionna_eyes.png<>res://fionna_head.gd<>res://Eyes.gd<>res://pixel_12.tres<>res://Dialouge.gd<>res://sounds_sizeup.wav<>res://sounds_cursehit.wav<>res://Sounds.gd<>res://fionna_bust_0002.png<>res://MuscleCurse.tres<>res://sounds_musclechange.wav<>res://fionna_bust_0003.png<>res://Button.gd<>res://sounds_step.wav<>res://Weight.gd<>res://Max Muscle Button.gd<>res://Max Bust Button.gd<>res://Max Fat Button.gd<>res://BustDebug.gd<>res://Add Bust Button.gd
+pb_swriting.tres::Theme::-1::1750291903::0::1::::<><><>0<>0<><>::
+pixelated.ttf::FontFile::6034855210709265114::1750291841::1750291927::1::::<><><>0<>0<>ec39e55f7573a5ea2f94df924b835103<>res://.godot/imported/pixelated.ttf-dac68f323da2df259ad33ba63295fcfb.fontdata::
+pixel_12.tres::FontFile::-1::1750291903::0::1::::<><><>0<>0<><>::res://dpcomic.ttf
+pixel_16.tres::FontFile::-1::1750291903::0::1::::<><><>0<>0<><>::res://dpcomic.ttf
+RightBoob.gd::GDScript::2794443096849342075::1750291903::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+Sounds.gd::GDScript::8355429353906697497::1750291903::0::1::::<>Node<><>0<>0<><>::
+sounds_cursehit.wav::AudioStreamWAV::4658428334785904152::1750291841::1750291927::1::::<><><>0<>0<>804f464e95f3c1eb12026f5e2d7b7d7e<>res://.godot/imported/sounds_cursehit.wav-09ed90656922f679862bff3ac7467b5d.sample::
+sounds_musclechange.wav::AudioStreamWAV::8305575402275303143::1750291841::1750291927::1::::<><><>0<>0<>aa4d9e8be135a3653094ea26ea3dbbbf<>res://.godot/imported/sounds_musclechange.wav-096d96ae085f46fb41cc619283ffef69.sample::
+sounds_sizeup.wav::AudioStreamWAV::2726344833211574090::1750291841::1750291927::1::::<><><>0<>0<>51f46170f5e747d3c33c20d6d97f8ad6<>res://.godot/imported/sounds_sizeup.wav-39c77ac73ec376d2d85a159cd5ce4530.sample::
+sounds_step.wav::AudioStreamWAV::5077366624819223280::1750291841::1750291927::1::::<><><>0<>0<>2307458651735bd052bf4b71dd3985be<>res://.godot/imported/sounds_step.wav-1bf397190b7a42168fc93d56e49a3c2d.sample::
+Tween.gd::GDScript::771852013261463195::1750291903::0::1::::<>Tween<><>0<>0<><>::
+Weight.gd::GDScript::5505369206180788545::1750291903::0::1::::<>Label<><>0<>0<><>::
+::res://android/::1750291840

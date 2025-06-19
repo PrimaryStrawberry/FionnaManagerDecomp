@@ -1,6 +1,6 @@
 extends Button
 
-onready var camera2 = get_node("../ThirdPersonCamera")
+@onready var camera2 = get_node("../ThirdPersonCamera")
 
 
 

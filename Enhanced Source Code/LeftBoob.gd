@@ -1,6 +1,6 @@
-extends AnimatedSprite
+extends AnimatedSprite2D
 
-onready var passivetimer = get_node("LBoobCheck")
+@onready var passivetimer = get_node("LBoobCheck")
 var bust = 1
 
 

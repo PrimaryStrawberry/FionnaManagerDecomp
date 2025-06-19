@@ -1,862 +1,971 @@
-[gd_scene load_steps=114 format=2]
+[gd_scene load_steps=118 format=3 uid="uid://b5pwg4xvnq65t"]
 
-[ext_resource path="res://GUI.png" type="Texture" id=1]
-[ext_resource path="res://fionna_body_0002.png" type="Texture" id=2]
-[ext_resource path="res://Missions.gd" type="Script" id=3]
-[ext_resource path="res://Body.gd" type="Script" id=4]
-[ext_resource path="res://fionna_head.png" type="Texture" id=5]
-[ext_resource path="res://pixel_16.tres" type="DynamicFont" id=6]
-[ext_resource path="res://fionna_bust_0001.png" type="Texture" id=7]
-[ext_resource path="res://Bust.gd" type="Script" id=8]
-[ext_resource path="res://GeneralInfo.gd" type="Script" id=9]
-[ext_resource path="res://GeneralInfo2.gd" type="Script" id=10]
-[ext_resource path="res://pb_swriting.tres" type="Theme" id=11]
-[ext_resource path="res://Clipboard.gd" type="Script" id=12]
-[ext_resource path="res://gui_icons_0001.png" type="Texture" id=13]
-[ext_resource path="res://fionna_eyes.png" type="Texture" id=14]
-[ext_resource path="res://fionna_head.gd" type="Script" id=15]
-[ext_resource path="res://Eyes.gd" type="Script" id=16]
-[ext_resource path="res://pixel_12.tres" type="DynamicFont" id=17]
-[ext_resource path="res://Dialouge.gd" type="Script" id=18]
-[ext_resource path="res://sounds_sizeup.wav" type="AudioStream" id=19]
-[ext_resource path="res://sounds_cursehit.wav" type="AudioStream" id=20]
-[ext_resource path="res://Sounds.gd" type="Script" id=21]
-[ext_resource path="res://fionna_bust_0002.png" type="Texture" id=22]
-[ext_resource path="res://MuscleCurse.tres" type="Animation" id=23]
-[ext_resource path="res://sounds_musclechange.wav" type="AudioStream" id=24]
-[ext_resource path="res://fionna_bust_0003.png" type="Texture" id=25]
-[ext_resource path="res://Button.gd" type="Script" id=26]
-[ext_resource path="res://sounds_step.wav" type="AudioStream" id=27]
-[ext_resource path="res://Weight.gd" type="Script" id=28]
-[ext_resource path="res://Max Muscle Button.gd" type="Script" id=29]
-[ext_resource path="res://Max Bust Button.gd" type="Script" id=30]
-[ext_resource path="res://Max Fat Button.gd" type="Script" id=31]
-[ext_resource path="res://BustDebug.gd" type="Script" id=32]
-[ext_resource path="res://Add Bust Button.gd" type="Script" id=33]
+[ext_resource type="Texture2D" uid="uid://dadx8rnatrpr2" path="res://GUI.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dmiquoexyi8la" path="res://fionna_body_0002.png" id="2"]
+[ext_resource type="Script" uid="uid://dohobwikv1nsa" path="res://Missions.gd" id="3"]
+[ext_resource type="Script" uid="uid://clibpxp66bl5i" path="res://Body.gd" id="4"]
+[ext_resource type="Texture2D" uid="uid://decvmcmkl4p6a" path="res://fionna_head.png" id="5"]
+[ext_resource type="FontFile" path="res://pixel_16.tres" id="6"]
+[ext_resource type="Texture2D" uid="uid://ck0h5ygc52bnw" path="res://fionna_bust_0001.png" id="7"]
+[ext_resource type="Script" uid="uid://b1qnodrxho28a" path="res://Bust.gd" id="8"]
+[ext_resource type="Script" uid="uid://dlliyx3joikaf" path="res://GeneralInfo.gd" id="9"]
+[ext_resource type="Script" uid="uid://7itxur74vwdk" path="res://GeneralInfo2.gd" id="10"]
+[ext_resource type="Theme" uid="uid://croryiah7igwa" path="res://pb_swriting.tres" id="11"]
+[ext_resource type="Script" uid="uid://bmhbqga648qvh" path="res://Clipboard.gd" id="12"]
+[ext_resource type="Texture2D" uid="uid://d1mje5667oarq" path="res://gui_icons_0001.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://drcg2fs3pi13v" path="res://fionna_eyes.png" id="14"]
+[ext_resource type="Script" uid="uid://c6pguoppawc0j" path="res://fionna_head.gd" id="15"]
+[ext_resource type="Script" uid="uid://c8guv5jwf1qgt" path="res://Eyes.gd" id="16"]
+[ext_resource type="FontFile" path="res://pixel_12.tres" id="17"]
+[ext_resource type="Script" uid="uid://b00qs6f1wjee5" path="res://Dialouge.gd" id="18"]
+[ext_resource type="AudioStream" uid="uid://be3wrbin7fqra" path="res://sounds_sizeup.wav" id="19"]
+[ext_resource type="AudioStream" uid="uid://b7mtvs8pjb70o" path="res://sounds_cursehit.wav" id="20"]
+[ext_resource type="Script" uid="uid://drbox3a6epdk8" path="res://Sounds.gd" id="21"]
+[ext_resource type="Texture2D" uid="uid://dpideue33qc24" path="res://fionna_bust_0002.png" id="22"]
+[ext_resource type="Animation" path="res://MuscleCurse.tres" id="23"]
+[ext_resource type="AudioStream" uid="uid://dqlju4dxrnpat" path="res://sounds_musclechange.wav" id="24"]
+[ext_resource type="Texture2D" uid="uid://c7ghuaf41c5v5" path="res://fionna_bust_0003.png" id="25"]
+[ext_resource type="Script" uid="uid://cbbxji01aenec" path="res://Button.gd" id="26"]
+[ext_resource type="AudioStream" uid="uid://celrqsnldeivw" path="res://sounds_step.wav" id="27"]
+[ext_resource type="Script" uid="uid://cko3vkhhrbvjd" path="res://Weight.gd" id="28"]
+[ext_resource type="Script" uid="uid://cvmisjyv4nkc1" path="res://bust_edit.gd" id="28_lv6vi"]
+[ext_resource type="Script" uid="uid://bheaita7jh6pl" path="res://Max Muscle Button.gd" id="29"]
+[ext_resource type="Script" uid="uid://dubkqvinvt1ps" path="res://Max Bust Button.gd" id="30"]
+[ext_resource type="Script" uid="uid://drmxinn5khf8y" path="res://Max Fat Button.gd" id="31"]
+[ext_resource type="Script" uid="uid://d3uacsmd34yx6" path="res://BustDebug.gd" id="32"]
+[ext_resource type="Script" uid="uid://368ram1ftxrc" path="res://Add Bust Button.gd" id="33"]
 
-[sub_resource type="StyleBoxEmpty" id=1]
+[sub_resource type="StyleBoxEmpty" id="4"]
 
-[sub_resource type="StyleBoxEmpty" id=2]
+[sub_resource type="StyleBoxEmpty" id="1"]
 
-[sub_resource type="StyleBoxEmpty" id=3]
+[sub_resource type="StyleBoxEmpty" id="2"]
 
-[sub_resource type="StyleBoxEmpty" id=4]
+[sub_resource type="StyleBoxEmpty" id="5"]
 
-[sub_resource type="StyleBoxEmpty" id=5]
+[sub_resource type="StyleBoxEmpty" id="9"]
 
-[sub_resource type="StyleBoxEmpty" id=6]
+[sub_resource type="StyleBoxEmpty" id="6"]
 
-[sub_resource type="StyleBoxEmpty" id=7]
+[sub_resource type="StyleBoxEmpty" id="7"]
 
-[sub_resource type="StyleBoxEmpty" id=8]
+[sub_resource type="StyleBoxEmpty" id="10"]
 
-[sub_resource type="StyleBoxEmpty" id=9]
+[sub_resource type="StyleBoxEmpty" id="14"]
 
-[sub_resource type="StyleBoxEmpty" id=10]
+[sub_resource type="StyleBoxEmpty" id="11"]
 
-[sub_resource type="StyleBoxEmpty" id=11]
+[sub_resource type="StyleBoxEmpty" id="12"]
 
-[sub_resource type="StyleBoxEmpty" id=12]
+[sub_resource type="StyleBoxEmpty" id="15"]
 
-[sub_resource type="StyleBoxEmpty" id=13]
+[sub_resource type="StyleBoxEmpty" id="13"]
 
-[sub_resource type="StyleBoxEmpty" id=14]
+[sub_resource type="AtlasTexture" id="16"]
+atlas = ExtResource("2")
+region = Rect2(0, 0, 134, 207)
 
-[sub_resource type="StyleBoxEmpty" id=15]
+[sub_resource type="AtlasTexture" id="17"]
+atlas = ExtResource("2")
+region = Rect2(134, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="18"]
+atlas = ExtResource("2")
+region = Rect2(268, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=17]
-atlas = ExtResource( 2 )
-region = Rect2( 134, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="19"]
+atlas = ExtResource("2")
+region = Rect2(402, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=18]
-atlas = ExtResource( 2 )
-region = Rect2( 268, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="20"]
+atlas = ExtResource("2")
+region = Rect2(536, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=19]
-atlas = ExtResource( 2 )
-region = Rect2( 402, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="21"]
+atlas = ExtResource("2")
+region = Rect2(670, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=20]
-atlas = ExtResource( 2 )
-region = Rect2( 536, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="22"]
+atlas = ExtResource("2")
+region = Rect2(804, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=21]
-atlas = ExtResource( 2 )
-region = Rect2( 670, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="23"]
+atlas = ExtResource("2")
+region = Rect2(938, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=22]
-atlas = ExtResource( 2 )
-region = Rect2( 804, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="24"]
+atlas = ExtResource("2")
+region = Rect2(1072, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=23]
-atlas = ExtResource( 2 )
-region = Rect2( 938, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="25"]
+atlas = ExtResource("2")
+region = Rect2(1206, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=24]
-atlas = ExtResource( 2 )
-region = Rect2( 1072, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="26"]
+atlas = ExtResource("2")
+region = Rect2(1340, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=25]
-atlas = ExtResource( 2 )
-region = Rect2( 1206, 0, 134, 207 )
-
-[sub_resource type="AtlasTexture" id=26]
-atlas = ExtResource( 2 )
-region = Rect2( 1340, 0, 134, 207 )
-
-[sub_resource type="SpriteFrames" id=27]
-animations = [ {
-"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
+[sub_resource type="SpriteFrames" id="27"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("16")
+}, {
+"duration": 1.0,
+"texture": SubResource("17")
+}, {
+"duration": 1.0,
+"texture": SubResource("18")
+}, {
+"duration": 1.0,
+"texture": SubResource("19")
+}, {
+"duration": 1.0,
+"texture": SubResource("20")
+}, {
+"duration": 1.0,
+"texture": SubResource("21")
+}, {
+"duration": 1.0,
+"texture": SubResource("22")
+}, {
+"duration": 1.0,
+"texture": SubResource("23")
+}, {
+"duration": 1.0,
+"texture": SubResource("24")
+}, {
+"duration": 1.0,
+"texture": SubResource("25")
+}, {
+"duration": 1.0,
+"texture": SubResource("26")
+}],
 "loop": false,
-"name": "default",
+"name": &"default",
 "speed": 5.0
-} ]
+}]
 
-[sub_resource type="AtlasTexture" id=28]
-atlas = ExtResource( 14 )
-region = Rect2( 0, 0, 35, 60 )
+[sub_resource type="AtlasTexture" id="28"]
+atlas = ExtResource("14")
+region = Rect2(0, 0, 35, 60)
 
-[sub_resource type="AtlasTexture" id=29]
-atlas = ExtResource( 14 )
-region = Rect2( 35, 0, 35, 60 )
+[sub_resource type="AtlasTexture" id="29"]
+atlas = ExtResource("14")
+region = Rect2(35, 0, 35, 60)
 
-[sub_resource type="AtlasTexture" id=30]
-atlas = ExtResource( 14 )
-region = Rect2( 70, 0, 35, 60 )
+[sub_resource type="AtlasTexture" id="30"]
+atlas = ExtResource("14")
+region = Rect2(70, 0, 35, 60)
 
-[sub_resource type="AtlasTexture" id=31]
-atlas = ExtResource( 14 )
-region = Rect2( 105, 0, 35, 60 )
+[sub_resource type="AtlasTexture" id="31"]
+atlas = ExtResource("14")
+region = Rect2(105, 0, 35, 60)
 
-[sub_resource type="SpriteFrames" id=32]
-animations = [ {
-"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
+[sub_resource type="SpriteFrames" id="32"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("28")
+}, {
+"duration": 1.0,
+"texture": SubResource("29")
+}, {
+"duration": 1.0,
+"texture": SubResource("30")
+}, {
+"duration": 1.0,
+"texture": SubResource("31")
+}],
 "loop": true,
-"name": "default",
+"name": &"default",
 "speed": 8.0
-} ]
+}]
 
-[sub_resource type="Animation" id=33]
+[sub_resource type="Animation" id="33"]
 resource_name = "Blink"
 step = 0.0833333
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.0833333, 0.166667, 0.25, 0.333333 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array(0, 0.0833333, 0.166667, 0.25, 0.333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [ 0, 1, 2, 3, 0 ]
+"values": [0, 1, 2, 3, 0]
 }
 
-[sub_resource type="Animation" id=34]
+[sub_resource type="Animation" id="34"]
 resource_name = "Closed"
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ 1, 1 ]
+"values": [1, 1]
 }
 
-[sub_resource type="Animation" id=35]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fvasu"]
+_data = {
+&"Blink": SubResource("33"),
+&"Closed": SubResource("34")
+}
+
+[sub_resource type="Animation" id="35"]
 resource_name = "GrowthSpurt"
 tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:scale:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.065372, -0.0177499, 0.96532, -0.08, 0.0116861, 0.0666129, -0.0021742, 1.08, -0.00486052, -0.12091, 0.137503, -0.00322425, 1, -0.200834, 0.0556133, 0.25, 0 ),
-"times": PoolRealArray( 0.2, 0.4, 0.5, 1 )
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.065372, -0.0177499, 0.96532, -0.08, 0.0116861, 0.0666129, -0.0021742, 1.08, -0.00486052, -0.12091, 0.137503, -0.00322425, 1, -0.200834, 0.0556133, 0.25, 0),
+"times": PackedFloat32Array(0.2, 0.4, 0.5, 1)
 }
 tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath(".:scale:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.0592715, -0.0163391, 0.962498, -0.101075, 0.0141083, 0.0575379, 0.00564331, 1.05, -0.0119596, -0.0705715, 0.189357, 0.00138092, 1, -0.148979, 0.041505, 0.25, 0 ),
-"times": PoolRealArray( 0.2, 0.4, 0.5, 1 )
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.0592715, -0.0163391, 0.962498, -0.101075, 0.0141083, 0.0575379, 0.00564331, 1.05, -0.0119596, -0.0705715, 0.189357, 0.00138092, 1, -0.148979, 0.041505, 0.25, 0),
+"times": PackedFloat32Array(0.2, 0.4, 0.5, 1)
 }
 
-[sub_resource type="AtlasTexture" id=36]
-atlas = ExtResource( 7 )
-region = Rect2( 134, 0, 134, 51 )
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lv6vi"]
+_data = {
+&"GrowthSpurt": SubResource("35")
+}
 
-[sub_resource type="AtlasTexture" id=37]
-atlas = ExtResource( 7 )
-region = Rect2( 0, 0, 134, 207 )
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rxxi4"]
+_data = {
+&"MuscleCurse": ExtResource("23")
+}
 
-[sub_resource type="AtlasTexture" id=38]
-atlas = ExtResource( 7 )
-region = Rect2( 134, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="36"]
+atlas = ExtResource("7")
+region = Rect2(134, 0, 134, 51)
 
-[sub_resource type="AtlasTexture" id=39]
-atlas = ExtResource( 7 )
-region = Rect2( 268, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="37"]
+atlas = ExtResource("7")
+region = Rect2(0, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=40]
-atlas = ExtResource( 7 )
-region = Rect2( 402, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="38"]
+atlas = ExtResource("7")
+region = Rect2(134, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=41]
-atlas = ExtResource( 7 )
-region = Rect2( 536, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="39"]
+atlas = ExtResource("7")
+region = Rect2(268, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=42]
-atlas = ExtResource( 7 )
-region = Rect2( 670, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="40"]
+atlas = ExtResource("7")
+region = Rect2(402, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=43]
-atlas = ExtResource( 22 )
-region = Rect2( 0, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="41"]
+atlas = ExtResource("7")
+region = Rect2(536, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=44]
-atlas = ExtResource( 22 )
-region = Rect2( 134, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="42"]
+atlas = ExtResource("7")
+region = Rect2(670, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=45]
-atlas = ExtResource( 22 )
-region = Rect2( 268, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="43"]
+atlas = ExtResource("22")
+region = Rect2(0, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=46]
-atlas = ExtResource( 22 )
-region = Rect2( 402, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="44"]
+atlas = ExtResource("22")
+region = Rect2(134, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=47]
-atlas = ExtResource( 22 )
-region = Rect2( 536, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="45"]
+atlas = ExtResource("22")
+region = Rect2(268, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=48]
-atlas = ExtResource( 22 )
-region = Rect2( 670, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="46"]
+atlas = ExtResource("22")
+region = Rect2(402, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=49]
-atlas = ExtResource( 25 )
-region = Rect2( 0, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="47"]
+atlas = ExtResource("22")
+region = Rect2(536, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=50]
-atlas = ExtResource( 25 )
-region = Rect2( 134, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="48"]
+atlas = ExtResource("22")
+region = Rect2(670, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=51]
-atlas = ExtResource( 25 )
-region = Rect2( 268, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="49"]
+atlas = ExtResource("25")
+region = Rect2(0, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=52]
-atlas = ExtResource( 25 )
-region = Rect2( 402, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="50"]
+atlas = ExtResource("25")
+region = Rect2(134, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=53]
-atlas = ExtResource( 25 )
-region = Rect2( 536, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="51"]
+atlas = ExtResource("25")
+region = Rect2(268, 0, 134, 207)
 
-[sub_resource type="AtlasTexture" id=54]
-atlas = ExtResource( 25 )
-region = Rect2( 670, 0, 134, 207 )
+[sub_resource type="AtlasTexture" id="52"]
+atlas = ExtResource("25")
+region = Rect2(402, 0, 134, 207)
 
-[sub_resource type="SpriteFrames" id=55]
-animations = [ {
-"frames": [ SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ) ],
+[sub_resource type="AtlasTexture" id="53"]
+atlas = ExtResource("25")
+region = Rect2(536, 0, 134, 207)
+
+[sub_resource type="AtlasTexture" id="54"]
+atlas = ExtResource("25")
+region = Rect2(670, 0, 134, 207)
+
+[sub_resource type="SpriteFrames" id="55"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("36")
+}, {
+"duration": 1.0,
+"texture": SubResource("37")
+}, {
+"duration": 1.0,
+"texture": SubResource("38")
+}, {
+"duration": 1.0,
+"texture": SubResource("39")
+}, {
+"duration": 1.0,
+"texture": SubResource("40")
+}, {
+"duration": 1.0,
+"texture": SubResource("41")
+}, {
+"duration": 1.0,
+"texture": SubResource("42")
+}, {
+"duration": 1.0,
+"texture": SubResource("43")
+}, {
+"duration": 1.0,
+"texture": SubResource("44")
+}, {
+"duration": 1.0,
+"texture": SubResource("45")
+}, {
+"duration": 1.0,
+"texture": SubResource("46")
+}, {
+"duration": 1.0,
+"texture": SubResource("47")
+}, {
+"duration": 1.0,
+"texture": SubResource("48")
+}, {
+"duration": 1.0,
+"texture": SubResource("49")
+}, {
+"duration": 1.0,
+"texture": SubResource("50")
+}, {
+"duration": 1.0,
+"texture": SubResource("51")
+}, {
+"duration": 1.0,
+"texture": SubResource("52")
+}, {
+"duration": 1.0,
+"texture": SubResource("53")
+}, {
+"duration": 1.0,
+"texture": SubResource("54")
+}],
 "loop": true,
-"name": "default",
+"name": &"default",
 "speed": 5.0
-} ]
+}]
 
-[sub_resource type="Animation" id=56]
+[sub_resource type="Animation" id="56"]
 tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:scale:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0.99918, -0.108909, 0.0902932, 0.25, 0 ),
-"times": PoolRealArray( 0.001, 0.6 )
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0.99918, -0.108909, 0.0902932, 0.25, 0),
+"times": PackedFloat32Array(0.001, 0.6)
 }
 tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath(".:scale:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.164714, -0.0897022, 0.86374, -0.0309194, -0.00107217, 0.0727892, -0.00161016, 1, -0.0509545, -0.063348, 0.0405531, -0.0516098, 0.99918, -0.0862408, -0.057844, 0.0784728, -0.0296274, 1, -0.0818739, -0.0253949, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.4, 0.6, 0.8, 1 )
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.164714, -0.0897022, 0.86374, -0.0309194, -0.00107217, 0.0727892, -0.00161016, 1, -0.0509545, -0.063348, 0.0405531, -0.0516098, 0.99918, -0.0862408, -0.057844, 0.0784728, -0.0296274, 1, -0.0818739, -0.0253949, 0.25, 0),
+"times": PackedFloat32Array(0, 0.4, 0.6, 0.8, 1)
 }
 
-[sub_resource type="Animation" id=57]
+[sub_resource type="Animation" id="57"]
 length = 2.0
-loop = true
+loop_mode = 1
 tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:scale:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.0305025, 0.105318, 1, -0.176673, 0.0315953, 0.110051, 0.0596802, 1, -0.264889, 0.0140424, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 1 )
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.0305025, 0.105318, 1, -0.176673, 0.0315953, 0.110051, 0.0596802, 1, -0.264889, 0.0140424, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
 }
 tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath(".:scale:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.0823568, 0.295124, 1.0061, -0.512201, -0.229841, 0.055146, -0.0648431, 1, -0.182532, -0.0657656, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 1, 2 )
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.0823568, 0.295124, 1.0061, -0.512201, -0.229841, 0.055146, -0.0648431, 1, -0.182532, -0.0657656, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1, 2)
 }
 
-[sub_resource type="AtlasTexture" id=58]
-atlas = ExtResource( 13 )
-region = Rect2( 0, 0, 31, 31 )
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tv6qc"]
+_data = {
+&"burstbounce": SubResource("56"),
+&"idlejiggle": SubResource("57")
+}
 
-[sub_resource type="AtlasTexture" id=59]
-atlas = ExtResource( 13 )
-region = Rect2( 31, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="58"]
+atlas = ExtResource("13")
+region = Rect2(0, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=60]
-atlas = ExtResource( 13 )
-region = Rect2( 62, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="59"]
+atlas = ExtResource("13")
+region = Rect2(31, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=61]
-atlas = ExtResource( 13 )
-region = Rect2( 93, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="60"]
+atlas = ExtResource("13")
+region = Rect2(62, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=62]
-atlas = ExtResource( 13 )
-region = Rect2( 124, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="61"]
+atlas = ExtResource("13")
+region = Rect2(93, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=63]
-atlas = ExtResource( 13 )
-region = Rect2( 155, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="62"]
+atlas = ExtResource("13")
+region = Rect2(124, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=64]
-atlas = ExtResource( 13 )
-region = Rect2( 186, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="63"]
+atlas = ExtResource("13")
+region = Rect2(155, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=65]
-atlas = ExtResource( 13 )
-region = Rect2( 217, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="64"]
+atlas = ExtResource("13")
+region = Rect2(186, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=66]
-atlas = ExtResource( 13 )
-region = Rect2( 248, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="65"]
+atlas = ExtResource("13")
+region = Rect2(217, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=67]
-atlas = ExtResource( 13 )
-region = Rect2( 279, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="66"]
+atlas = ExtResource("13")
+region = Rect2(248, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=68]
-atlas = ExtResource( 13 )
-region = Rect2( 310, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="67"]
+atlas = ExtResource("13")
+region = Rect2(279, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=69]
-atlas = ExtResource( 13 )
-region = Rect2( 341, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="68"]
+atlas = ExtResource("13")
+region = Rect2(310, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=70]
-atlas = ExtResource( 13 )
-region = Rect2( 372, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="69"]
+atlas = ExtResource("13")
+region = Rect2(341, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=71]
-atlas = ExtResource( 13 )
-region = Rect2( 403, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="70"]
+atlas = ExtResource("13")
+region = Rect2(372, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=72]
-atlas = ExtResource( 13 )
-region = Rect2( 434, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="71"]
+atlas = ExtResource("13")
+region = Rect2(403, 0, 31, 31)
 
-[sub_resource type="AtlasTexture" id=73]
-atlas = ExtResource( 13 )
-region = Rect2( 465, 0, 31, 31 )
+[sub_resource type="AtlasTexture" id="72"]
+atlas = ExtResource("13")
+region = Rect2(434, 0, 31, 31)
 
-[sub_resource type="SpriteFrames" id=74]
-animations = [ {
-"frames": [ SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ), SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ) ],
+[sub_resource type="AtlasTexture" id="73"]
+atlas = ExtResource("13")
+region = Rect2(465, 0, 31, 31)
+
+[sub_resource type="SpriteFrames" id="74"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("58")
+}, {
+"duration": 1.0,
+"texture": SubResource("59")
+}, {
+"duration": 1.0,
+"texture": SubResource("60")
+}, {
+"duration": 1.0,
+"texture": SubResource("61")
+}, {
+"duration": 1.0,
+"texture": SubResource("62")
+}, {
+"duration": 1.0,
+"texture": SubResource("63")
+}, {
+"duration": 1.0,
+"texture": SubResource("64")
+}, {
+"duration": 1.0,
+"texture": SubResource("65")
+}, {
+"duration": 1.0,
+"texture": SubResource("66")
+}, {
+"duration": 1.0,
+"texture": SubResource("67")
+}, {
+"duration": 1.0,
+"texture": SubResource("68")
+}, {
+"duration": 1.0,
+"texture": SubResource("69")
+}, {
+"duration": 1.0,
+"texture": SubResource("70")
+}, {
+"duration": 1.0,
+"texture": SubResource("71")
+}, {
+"duration": 1.0,
+"texture": SubResource("72")
+}, {
+"duration": 1.0,
+"texture": SubResource("73")
+}],
 "loop": true,
-"name": "default",
+"name": &"default",
 "speed": 5.0
-} ]
+}]
 
-[sub_resource type="Animation" id=75]
+[sub_resource type="Animation" id="75"]
 length = 2.0
-loop = true
+loop_mode = 1
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ]
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 }
 
-[sub_resource type="StyleBoxEmpty" id=76]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xv4ic"]
+_data = {
+&"BoobCurseAnim": SubResource("75")
+}
 
-[sub_resource type="StyleBoxEmpty" id=77]
+[sub_resource type="StyleBoxEmpty" id="78"]
 
-[sub_resource type="StyleBoxEmpty" id=78]
+[sub_resource type="StyleBoxEmpty" id="79"]
 
-[sub_resource type="StyleBoxEmpty" id=79]
+[sub_resource type="StyleBoxEmpty" id="76"]
 
-[sub_resource type="StyleBoxEmpty" id=80]
+[sub_resource type="StyleBoxEmpty" id="77"]
+
+[sub_resource type="StyleBoxEmpty" id="80"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Clipboard" type="Node" parent="."]
-script = ExtResource( 12 )
+[node name="Clipboard" type="VBoxContainer" parent="."]
+top_level = true
+offset_left = 33.0
+offset_top = 38.0
+offset_right = 133.0
+offset_bottom = 234.0
+theme_override_constants/separation = 1
+script = ExtResource("12")
 
 [node name="Locations" type="Label" parent="Clipboard"]
-margin_left = 32.0
-margin_top = 40.0
-margin_right = 74.0
-margin_bottom = 54.0
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color = Color( 0.796078, 0.490196, 0.490196, 1 )
+layout_mode = 2
+theme_override_colors/font_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 14
 text = "Locations:"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Subject" type="Label" parent="Clipboard"]
-margin_left = 32.0
-margin_top = 128.0
-margin_right = 74.0
-margin_bottom = 142.0
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color = Color( 0.796078, 0.490196, 0.490196, 1 )
-text = "Subject:"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Physique" type="Label" parent="Clipboard"]
-margin_left = 32.0
-margin_top = 141.0
-margin_right = 74.0
-margin_bottom = 155.0
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color = Color( 0.964706, 0.768627, 0.627451, 1 )
-text = "Physique: Fit"
-script = ExtResource( 9 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Breasts" type="Label" parent="Clipboard"]
-margin_left = 32.0
-margin_top = 154.0
-margin_right = 85.0
-margin_bottom = 168.0
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color = Color( 0.964706, 0.768627, 0.627451, 1 )
-text = "Breasts: Fit"
-script = ExtResource( 10 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Weight" type="Label" parent="Clipboard"]
-margin_left = 32.0
-margin_top = 166.0
-margin_right = 85.0
-margin_bottom = 180.0
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color = Color( 0.964706, 0.768627, 0.627451, 1 )
-text = "Breasts: Fit"
-script = ExtResource( 28 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Muscle_Button" type="Button" parent="Clipboard"]
-margin_left = 32.0
-margin_top = 49.0
-margin_right = 119.0
-margin_bottom = 67.0
-rect_pivot_offset = Vector2( 25, 32 )
-theme = ExtResource( 11 )
-custom_styles/hover = SubResource( 1 )
-custom_styles/pressed = SubResource( 2 )
-custom_styles/focus = SubResource( 3 )
-custom_styles/disabled = SubResource( 4 )
-custom_styles/normal = SubResource( 5 )
-custom_fonts/font = ExtResource( 6 )
-custom_colors/font_color_disabled = Color( 0.964706, 0.768627, 0.627451, 1 )
-custom_colors/font_color = Color( 0.964706, 0.768627, 0.627451, 1 )
-custom_colors/font_color_hover = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+layout_mode = 2
+theme = ExtResource("11")
+theme_override_colors/font_disabled_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_colors/font_hover_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_styles/disabled = SubResource("4")
+theme_override_styles/hover = SubResource("1")
+theme_override_styles/pressed = SubResource("2")
+theme_override_styles/normal = SubResource("5")
 text = "Protein Palace"
-align = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+alignment = 0
 
 [node name="Fat_Button" type="Button" parent="Clipboard"]
-margin_left = 32.0
-margin_top = 65.0
-margin_right = 132.0
-margin_bottom = 83.0
-rect_pivot_offset = Vector2( 25, 32 )
-theme = ExtResource( 11 )
-custom_styles/hover = SubResource( 6 )
-custom_styles/pressed = SubResource( 7 )
-custom_styles/focus = SubResource( 8 )
-custom_styles/disabled = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
-custom_fonts/font = ExtResource( 6 )
-custom_colors/font_color_disabled = Color( 0.964706, 0.768627, 0.627451, 1 )
-custom_colors/font_color = Color( 0.964706, 0.768627, 0.627451, 1 )
-custom_colors/font_color_hover = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+layout_mode = 2
+theme = ExtResource("11")
+theme_override_colors/font_disabled_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_colors/font_hover_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_styles/disabled = SubResource("9")
+theme_override_styles/hover = SubResource("6")
+theme_override_styles/pressed = SubResource("7")
+theme_override_styles/normal = SubResource("10")
 text = "Caramel Canyon"
-align = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+alignment = 0
 
 [node name="Boobs_Button" type="Button" parent="Clipboard"]
-margin_left = 32.0
-margin_top = 81.0
-margin_right = 88.0
-margin_bottom = 99.0
-rect_pivot_offset = Vector2( 25, 32 )
-custom_styles/hover = SubResource( 11 )
-custom_styles/pressed = SubResource( 12 )
-custom_styles/focus = SubResource( 13 )
-custom_styles/disabled = SubResource( 14 )
-custom_styles/normal = SubResource( 15 )
-custom_fonts/font = ExtResource( 6 )
-custom_colors/font_color_disabled = Color( 0.964706, 0.768627, 0.627451, 1 )
-custom_colors/font_color = Color( 0.964706, 0.768627, 0.627451, 1 )
-custom_colors/font_color_hover = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+layout_mode = 2
+theme = ExtResource("11")
+theme_override_colors/font_disabled_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_colors/font_hover_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_styles/disabled = SubResource("14")
+theme_override_styles/hover = SubResource("11")
+theme_override_styles/pressed = SubResource("12")
+theme_override_styles/normal = SubResource("15")
 text = "Mt. Milk"
-align = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+alignment = 0
 
 [node name="Boobs_Button2" type="Button" parent="Clipboard"]
-margin_left = 32.0
-margin_top = 97.0
-margin_right = 118.0
-margin_bottom = 115.0
-rect_pivot_offset = Vector2( 25, 32 )
-custom_styles/hover = SubResource( 11 )
-custom_styles/pressed = SubResource( 12 )
-custom_styles/focus = SubResource( 13 )
-custom_styles/disabled = SubResource( 14 )
-custom_styles/normal = SubResource( 15 )
-custom_fonts/font = ExtResource( 6 )
-custom_colors/font_color_disabled = Color( 0.964706, 0.768627, 0.627451, 1 )
-custom_colors/font_color = Color( 0.964706, 0.768627, 0.627451, 1 )
-custom_colors/font_color_hover = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+layout_mode = 2
+theme = ExtResource("11")
+theme_override_colors/font_disabled_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_colors/font_hover_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_styles/disabled = SubResource("14")
+theme_override_styles/hover = SubResource("11")
+theme_override_styles/pressed = SubResource("12")
+theme_override_styles/normal = SubResource("15")
 text = "The Pale Flats"
-align = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+alignment = 0
+
+[node name="HSeparator" type="HSeparator" parent="Clipboard"]
+z_index = -1
+layout_mode = 2
+theme_override_constants/separation = 9
+
+[node name="Subject" type="Label" parent="Clipboard"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 14
+text = "Subject:"
+
+[node name="Physique" type="Label" parent="Clipboard"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 14
+text = "Physique: Fit"
+script = ExtResource("9")
+
+[node name="Breasts" type="Label" parent="Clipboard"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 14
+text = "Breasts: Fit"
+script = ExtResource("10")
+
+[node name="Weight" type="Label" parent="Clipboard"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 14
+text = "Weight"
+script = ExtResource("28")
+
+[node name="HSeparator2" type="HSeparator" parent="Clipboard"]
+z_index = -1
+layout_mode = 2
+theme_override_constants/separation = 4
 
 [node name="Dispatch" type="Button" parent="Clipboard"]
-margin_left = 32.0
-margin_top = 184.0
-margin_right = 98.0
-margin_bottom = 202.0
-rect_pivot_offset = Vector2( 25, 32 )
-custom_styles/hover = SubResource( 11 )
-custom_styles/pressed = SubResource( 12 )
-custom_styles/focus = SubResource( 13 )
-custom_styles/disabled = SubResource( 14 )
-custom_styles/normal = SubResource( 15 )
-custom_fonts/font = ExtResource( 6 )
-custom_colors/font_color_disabled = Color( 0.964706, 0.768627, 0.627451, 1 )
-custom_colors/font_color = Color( 0.964706, 0.768627, 0.627451, 1 )
-custom_colors/font_color_hover = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+layout_mode = 2
+theme = ExtResource("11")
+theme_override_colors/font_disabled_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_colors/font_hover_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_color = Color(0.964706, 0.768627, 0.627451, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_styles/focus = SubResource("13")
+theme_override_styles/disabled = SubResource("14")
+theme_override_styles/hover = SubResource("11")
+theme_override_styles/pressed = SubResource("12")
+theme_override_styles/normal = SubResource("15")
 text = "Dispatch!!"
-align = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+alignment = 0
 
 [node name="Sounds" type="Node" parent="."]
-script = ExtResource( 21 )
+script = ExtResource("21")
 
 [node name="S_CurseHit" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource( 20 )
+stream = ExtResource("20")
 volume_db = -28.108
 pitch_scale = 2.0
 
 [node name="S_SizeUp" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource( 19 )
+stream = ExtResource("19")
 volume_db = -27.782
 
 [node name="S_MuscleChange" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource( 24 )
+stream = ExtResource("24")
 volume_db = -33.84
 
 [node name="S_Step" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource( 27 )
+stream = ExtResource("27")
 volume_db = -33.84
 
 [node name="Fionna" type="Node" parent="."]
 
-[node name="Body" type="AnimatedSprite" parent="Fionna"]
-position = Vector2( 312, 240 )
-frames = SubResource( 27 )
+[node name="Body" type="AnimatedSprite2D" parent="Fionna"]
+position = Vector2(312, 240)
+sprite_frames = SubResource("27")
 frame = 5
-offset = Vector2( -16, -104 )
-script = ExtResource( 4 )
+offset = Vector2(-16, -104)
+script = ExtResource("4")
 
 [node name="CurseTimer" type="Timer" parent="Fionna/Body"]
 wait_time = 2.0
-
-[node name="Tween" type="Tween" parent="Fionna/Body"]
-
-[node name="DepartTween" type="Tween" parent="Fionna/Body"]
-
-[node name="ReturnTween" type="Tween" parent="Fionna/Body"]
 
 [node name="Timer" type="Timer" parent="Fionna/Body"]
 autostart = true
 
 [node name="PassiveTimer" type="Timer" parent="Fionna/Body"]
 
-[node name="fionna_head" type="Sprite" parent="Fionna/Body"]
-position = Vector2( 1, -135 )
-texture = ExtResource( 5 )
+[node name="fionna_head" type="Sprite2D" parent="Fionna/Body"]
+position = Vector2(1, -135)
+texture = ExtResource("5")
 hframes = 5
-script = ExtResource( 15 )
+script = ExtResource("15")
 
-[node name="Eyes" type="AnimatedSprite" parent="Fionna/Body/fionna_head"]
-position = Vector2( -18, -30 )
-frames = SubResource( 32 )
+[node name="Eyes" type="AnimatedSprite2D" parent="Fionna/Body/fionna_head"]
+position = Vector2(-18, -30)
+sprite_frames = SubResource("32")
 centered = false
-script = ExtResource( 16 )
+script = ExtResource("16")
 
 [node name="BlinkTimer" type="Timer" parent="Fionna/Body/fionna_head"]
 
 [node name="EyeBlink" type="AnimationPlayer" parent="Fionna/Body/fionna_head"]
 root_node = NodePath("../Eyes")
-anims/Blink = SubResource( 33 )
-anims/Closed = SubResource( 34 )
+libraries = {
+&"": SubResource("AnimationLibrary_fvasu")
+}
 
 [node name="Missions" type="Node" parent="Fionna/Body"]
-script = ExtResource( 3 )
+script = ExtResource("3")
 
 [node name="ReturnDelay" type="Timer" parent="Fionna/Body/Missions"]
 one_shot = true
 
-[node name="Tween" type="Tween" parent="Fionna/Body/Missions"]
-
 [node name="Growth" type="AnimationPlayer" parent="Fionna/Body"]
-anims/GrowthSpurt = SubResource( 35 )
+libraries = {
+&"": SubResource("AnimationLibrary_lv6vi")
+}
 
 [node name="GrowthPeak" type="Timer" parent="Fionna/Body/Growth"]
 one_shot = true
 
 [node name="MuscleCursePlayer" type="AnimationPlayer" parent="Fionna/Body"]
-anims/MuscleCurse = ExtResource( 23 )
+libraries = {
+&"": SubResource("AnimationLibrary_rxxi4")
+}
 
 [node name="MuscleCurseTimer" type="Timer" parent="Fionna/Body/MuscleCursePlayer"]
 wait_time = 2.0
 
 [node name="BustContainer" type="Node2D" parent="Fionna/Body"]
-position = Vector2( -4.42682, -98.516 )
+position = Vector2(-4.42682, -98.516)
 
-[node name="Bust" type="AnimatedSprite" parent="Fionna/Body/BustContainer"]
-pause_mode = 2
+[node name="Bust" type="AnimatedSprite2D" parent="Fionna/Body/BustContainer"]
+process_mode = 3
 process_priority = 1
-position = Vector2( -0.00146484, 0.00402832 )
-frames = SubResource( 55 )
+position = Vector2(-0.00146484, 0.00402832)
+sprite_frames = SubResource("55")
 frame = 2
-offset = Vector2( -11.542, -5.46127 )
-script = ExtResource( 8 )
+offset = Vector2(-11.542, -5.46127)
+script = ExtResource("8")
 
 [node name="Bounce" type="AnimationPlayer" parent="Fionna/Body/BustContainer/Bust"]
 process_priority = -4
 root_node = NodePath("../..")
-anims/burstbounce = SubResource( 56 )
-anims/idlejiggle = SubResource( 57 )
+libraries = {
+&"": SubResource("AnimationLibrary_tv6qc")
+}
 
-[node name="BustAnchorPoint" type="Position2D" parent="Fionna/Body"]
+[node name="BustAnchorPoint" type="Marker2D" parent="Fionna/Body"]
 visible = false
-position = Vector2( -4.42712, -98.5188 )
-scale = Vector2( 1, 1 )
+position = Vector2(-4.42712, -98.5188)
 
 [node name="Dialouge" type="Label" parent="Fionna"]
-margin_left = 200.0
-margin_top = 48.0
-margin_right = 336.0
-margin_bottom = 60.0
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color = Color( 0.796078, 0.490196, 0.490196, 1 )
+offset_left = 201.0
+offset_top = 48.0
+offset_right = 337.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_fonts/font = ExtResource("17")
 text = "Hey there!"
-autowrap = true
-script = ExtResource( 18 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+autowrap_mode = 3
+script = ExtResource("18")
 
 [node name="ResponseDelay" type="Timer" parent="Fionna/Dialouge"]
 one_shot = true
 
-[node name="BoobCurse" type="AnimatedSprite" parent="Fionna"]
-position = Vector2( 313, 18 )
-frames = SubResource( 74 )
-frame = 14
+[node name="BoobCurse" type="AnimatedSprite2D" parent="Fionna"]
+position = Vector2(313, 18)
+sprite_frames = SubResource("74")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Fionna/BoobCurse"]
-anims/BoobCurseAnim = SubResource( 75 )
+libraries = {
+&"": SubResource("AnimationLibrary_xv4ic")
+}
 
-[node name="GUI" type="Sprite" parent="."]
-position = Vector2( 180.011, 120 )
-texture = ExtResource( 1 )
+[node name="GUI" type="Sprite2D" parent="."]
+position = Vector2(180.011, 120)
+texture = ExtResource("1")
 
 [node name="Button Container" type="VBoxContainer" parent="."]
+anchors_preset = 10
 anchor_right = 1.0
-margin_left = 184.904
-margin_top = 129.905
-margin_right = 233.904
-margin_bottom = 223.905
+offset_left = 184.904
+offset_top = 129.905
+offset_right = 233.904
+offset_bottom = 223.905
 grow_vertical = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="Bust Edit" type="LineEdit" parent="Button Container"]
+layout_mode = 2
+theme = ExtResource("11")
+placeholder_text = "Bust"
+script = ExtResource("28_lv6vi")
 
 [node name="Add Bust" type="Button" parent="Button Container"]
-margin_right = 49.0
-margin_bottom = 12.0
-custom_styles/hover = SubResource( 76 )
-custom_styles/pressed = SubResource( 77 )
-custom_styles/focus = SubResource( 78 )
-custom_styles/disabled = SubResource( 79 )
-custom_styles/normal = SubResource( 80 )
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color_disabled = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color_hover = Color( 0.964706, 0.784314, 0.611765, 1 )
-custom_colors/font_color_pressed = Color( 0.486275, 0.247059, 0.345098, 1 )
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_hover_color = Color(0.964706, 0.784314, 0.611765, 1)
+theme_override_colors/font_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_pressed_color = Color(0.486275, 0.247059, 0.345098, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_styles/focus = SubResource("78")
+theme_override_styles/disabled = SubResource("79")
+theme_override_styles/hover = SubResource("76")
+theme_override_styles/pressed = SubResource("77")
+theme_override_styles/normal = SubResource("80")
 text = "+ Bust"
-script = ExtResource( 33 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("33")
 
 [node name="BustDebug" type="Label" parent="Button Container/Add Bust"]
 visible = false
-margin_top = -18.0
-margin_right = 49.0
-margin_bottom = -4.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
+layout_mode = 0
+offset_top = -18.0
+offset_right = 49.0
+offset_bottom = -4.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Bust:"
-script = ExtResource( 32 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("32")
 
 [node name="Max Bust" type="Button" parent="Button Container"]
-margin_top = 16.0
-margin_right = 49.0
-margin_bottom = 28.0
-custom_styles/hover = SubResource( 76 )
-custom_styles/pressed = SubResource( 77 )
-custom_styles/focus = SubResource( 78 )
-custom_styles/disabled = SubResource( 79 )
-custom_styles/normal = SubResource( 80 )
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color_disabled = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color_hover = Color( 0.964706, 0.784314, 0.611765, 1 )
-custom_colors/font_color_pressed = Color( 0.486275, 0.247059, 0.345098, 1 )
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_hover_color = Color(0.964706, 0.784314, 0.611765, 1)
+theme_override_colors/font_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_pressed_color = Color(0.486275, 0.247059, 0.345098, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_styles/focus = SubResource("78")
+theme_override_styles/disabled = SubResource("79")
+theme_override_styles/hover = SubResource("76")
+theme_override_styles/pressed = SubResource("77")
+theme_override_styles/normal = SubResource("80")
 text = "Max Bust"
-script = ExtResource( 30 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("30")
 
 [node name="Max Fat" type="Button" parent="Button Container"]
-margin_top = 32.0
-margin_right = 49.0
-margin_bottom = 44.0
-custom_styles/hover = SubResource( 76 )
-custom_styles/pressed = SubResource( 77 )
-custom_styles/focus = SubResource( 78 )
-custom_styles/disabled = SubResource( 79 )
-custom_styles/normal = SubResource( 80 )
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color_disabled = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color_hover = Color( 0.964706, 0.784314, 0.611765, 1 )
-custom_colors/font_color_pressed = Color( 0.486275, 0.247059, 0.345098, 1 )
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_hover_color = Color(0.964706, 0.784314, 0.611765, 1)
+theme_override_colors/font_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_pressed_color = Color(0.486275, 0.247059, 0.345098, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_styles/focus = SubResource("78")
+theme_override_styles/disabled = SubResource("79")
+theme_override_styles/hover = SubResource("76")
+theme_override_styles/pressed = SubResource("77")
+theme_override_styles/normal = SubResource("80")
 text = "Max Fat"
-script = ExtResource( 31 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("31")
 
 [node name="Max Muscle" type="Button" parent="Button Container"]
-margin_top = 48.0
-margin_right = 49.0
-margin_bottom = 60.0
-custom_styles/hover = SubResource( 76 )
-custom_styles/pressed = SubResource( 77 )
-custom_styles/focus = SubResource( 78 )
-custom_styles/disabled = SubResource( 79 )
-custom_styles/normal = SubResource( 80 )
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color_disabled = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color_hover = Color( 0.964706, 0.784314, 0.611765, 1 )
-custom_colors/font_color_pressed = Color( 0.486275, 0.247059, 0.345098, 1 )
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_hover_color = Color(0.964706, 0.784314, 0.611765, 1)
+theme_override_colors/font_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_pressed_color = Color(0.486275, 0.247059, 0.345098, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_styles/focus = SubResource("78")
+theme_override_styles/disabled = SubResource("79")
+theme_override_styles/hover = SubResource("76")
+theme_override_styles/pressed = SubResource("77")
+theme_override_styles/normal = SubResource("80")
 text = "Max Muscle"
-script = ExtResource( 29 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("29")
 
 [node name="Reset" type="Button" parent="Button Container"]
-margin_top = 64.0
-margin_right = 49.0
-margin_bottom = 76.0
-custom_styles/hover = SubResource( 76 )
-custom_styles/pressed = SubResource( 77 )
-custom_styles/focus = SubResource( 78 )
-custom_styles/disabled = SubResource( 79 )
-custom_styles/normal = SubResource( 80 )
-custom_fonts/font = ExtResource( 17 )
-custom_colors/font_color_disabled = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color = Color( 0.796078, 0.490196, 0.490196, 1 )
-custom_colors/font_color_hover = Color( 0.964706, 0.784314, 0.611765, 1 )
-custom_colors/font_color_pressed = Color( 0.486275, 0.247059, 0.345098, 1 )
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_hover_color = Color(0.964706, 0.784314, 0.611765, 1)
+theme_override_colors/font_color = Color(0.796078, 0.490196, 0.490196, 1)
+theme_override_colors/font_pressed_color = Color(0.486275, 0.247059, 0.345098, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_styles/focus = SubResource("78")
+theme_override_styles/disabled = SubResource("79")
+theme_override_styles/hover = SubResource("76")
+theme_override_styles/pressed = SubResource("77")
+theme_override_styles/normal = SubResource("80")
 text = "Reset"
-script = ExtResource( 26 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("26")
 
 [connection signal="pressed" from="Clipboard/Muscle_Button" to="Fionna/Body/Missions" method="_on_MuscleMission"]
 [connection signal="pressed" from="Clipboard/Muscle_Button" to="Fionna/Dialouge" method="_on_Muscle_Button_pressed"]
@@ -871,9 +980,6 @@ __meta__ = {
 [connection signal="timeout" from="Fionna/Body/CurseTimer" to="Clipboard/Breasts" method="_on_CurseTimer_timeout"]
 [connection signal="timeout" from="Fionna/Body/CurseTimer" to="Clipboard/Weight" method="_on_CurseTimer_timeout"]
 [connection signal="timeout" from="Fionna/Body/CurseTimer" to="Fionna/Body" method="_on_CurseTimer_timeout"]
-[connection signal="tween_completed" from="Fionna/Body/DepartTween" to="Fionna/Body/Missions" method="_on_DepartTween_tween_completed"]
-[connection signal="tween_completed" from="Fionna/Body/ReturnTween" to="Fionna/Body" method="_on_ReturnTween_tween_completed"]
-[connection signal="tween_completed" from="Fionna/Body/ReturnTween" to="Fionna/Dialouge" method="_on_ReturnTween_tween_completed"]
 [connection signal="timeout" from="Fionna/Body/Timer" to="Fionna/Body" method="_on_Timer_timeout"]
 [connection signal="timeout" from="Fionna/Body/fionna_head/BlinkTimer" to="Fionna/Body/fionna_head" method="_on_BlinkTimer_timeout"]
 [connection signal="timeout" from="Fionna/Body/Missions/ReturnDelay" to="Fionna/Body" method="_on_ReturnDelay_timeout"]
@@ -888,6 +994,9 @@ __meta__ = {
 [connection signal="timeout" from="Fionna/Body/Growth/GrowthPeak" to="Sounds" method="_on_GrowthPeak_timeout"]
 [connection signal="timeout" from="Fionna/Body/Growth/GrowthPeak" to="Fionna/Body" method="_on_GrowthPeak_timeout"]
 [connection signal="timeout" from="Fionna/Dialouge/ResponseDelay" to="Fionna/Dialouge" method="_on_ResponseDelay_timeout"]
+[connection signal="editing_toggled" from="Button Container/Bust Edit" to="Button Container/Bust Edit" method="_on_editing_toggled"]
+[connection signal="text_changed" from="Button Container/Bust Edit" to="Button Container/Bust Edit" method="_on_text_changed"]
+[connection signal="text_submitted" from="Button Container/Bust Edit" to="Button Container/Bust Edit" method="_on_text_submitted"]
 [connection signal="pressed" from="Button Container/Add Bust" to="Button Container/Add Bust" method="_on_Button_pressed"]
 [connection signal="pressed" from="Button Container/Add Bust" to="Button Container/Add Bust/BustDebug" method="_on_Add_Bust_pressed"]
 [connection signal="pressed" from="Button Container/Max Bust" to="Button Container/Max Bust" method="_on_Button_pressed"]

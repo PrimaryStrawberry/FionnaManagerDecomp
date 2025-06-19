@@ -1,4 +1,4 @@
-extends AnimatedSprite
+extends AnimatedSprite2D
 
 var bust = 1
 #onready var BustContainer = get_node("/root/Node2D/Fionna/Body/BustContainer")
@@ -63,7 +63,3 @@ func interpolateScale(input_value, input_min, input_max, output_min, output_max)
 	var mapped_value = (input_value - input_min) / input_range
 	mapped_value = output_min + (mapped_value * output_range)
 	return mapped_value
-
-
-
-

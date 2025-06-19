@@ -1,6 +1,6 @@
 extends Label
 
-onready var responsedelay = get_node("ResponseDelay")
+@onready var responsedelay = get_node("ResponseDelay")
 
 var growing = ["Mmph!", 
 "...!!!", 
@@ -92,22 +92,16 @@ func _on_ResponseDelay_timeout()->void :
 
 
 func _on_Boobs_Button_pressed()->void :
-	text = ("Next Location: Mt. Milk")
+	text = ("Next Location: \nMt. Milk")
 
 
 func _on_Boobs_Button2_pressed()->void :
-	text = ("Next Location: The Pale Flats")
+	text = ("Next Location: \nThe Pale Flats")
 
 
 func _on_Fat_Button_pressed()->void :
-	text = ("Next Location: Caramel Canyon")
+	text = ("Next Location: \nCaramel Canyon")
 
 
 func _on_Muscle_Button_pressed()->void :
-	text = ("Next Location: Protein Palace")
-
-
-
-
-
-
+	text = ("Next Location: \nProtein Palace")

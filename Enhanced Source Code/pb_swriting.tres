@@ -1,3 +1,37 @@
-[gd_resource type="Theme" format=2]
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://croryiah7igwa"]
+
+[ext_resource type="FontFile" uid="uid://cr8lgii5ajw47" path="res://pixelated.ttf" id="1_oybf3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oybf3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oybf3"]
+content_margin_left = 14.0
+bg_color = Color(1, 0.964706, 0.827451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.976471, 0.658824, 0.458824, 1)
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cnk7y"]
+content_margin_left = 14.0
+bg_color = Color(1, 0.964706, 0.827451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.486275, 0.247059, 0.345098, 1)
+corner_detail = 1
 
 [resource]
+Button/colors/font_color = Color(0.964706, 0.768627, 0.627451, 1)
+Button/colors/font_focus_color = Color(0.921569, 0.419608, 0.435294, 1)
+Button/styles/focus = SubResource("StyleBoxEmpty_oybf3")
+LineEdit/colors/caret_color = Color(0.921569, 0.419608, 0.435294, 1)
+LineEdit/colors/font_color = Color(0.796078, 0.490196, 0.490196, 1)
+LineEdit/colors/font_placeholder_color = Color(0.964706, 0.768627, 0.627451, 1)
+LineEdit/colors/selection_color = Color(0.501961, 0.501961, 0.501961, 0)
+LineEdit/fonts/font = ExtResource("1_oybf3")
+LineEdit/styles/focus = SubResource("StyleBoxFlat_oybf3")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_cnk7y")

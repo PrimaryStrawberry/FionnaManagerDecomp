@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/sounds_cursehit.wav-09ed90656922f679862bff3ac7467b5d.sample"
+type="AudioStreamWAV"
+uid="uid://b7mtvs8pjb70o"
+path="res://.godot/imported/sounds_cursehit.wav-09ed90656922f679862bff3ac7467b5d.sample"
 
 [deps]
 
 source_file="res://sounds_cursehit.wav"
-dest_files=[ "res://.import/sounds_cursehit.wav-09ed90656922f679862bff3ac7467b5d.sample" ]
+dest_files=["res://.godot/imported/sounds_cursehit.wav-09ed90656922f679862bff3ac7467b5d.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

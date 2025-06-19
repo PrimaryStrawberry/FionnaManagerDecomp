@@ -26,6 +26,3 @@ func _on_Growth_animation_finished(_anim_name:String)->void :
 	"Massive"
 	]
 	text = "Physique: " + strengthdescription[strength]
-
-
-

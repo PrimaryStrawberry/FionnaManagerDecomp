@@ -1,0 +1,14 @@
+res://default_env.tres
+res://Node2D.tscn
+res://Body.gd
+res://Clipboard.gd
+res://fionna_head.gd
+res://GeneralInfo2.gd
+res://GeneralInfo.gd
+res://Sounds.gd
+res://Add Bust Button.gd
+res://Bust.gd
+res://bust_edit.gd
+res://pb_swriting.tres
+res://Dialouge.gd
+res://camera_2d.gd

@@ -1,12 +1,10 @@
 extends Node
 
 
-export (NodePath) var dropdown_path
+@export var dropdown_path: NodePath
 
 
 
 
 func _ready()->void :
 	pass
-
-

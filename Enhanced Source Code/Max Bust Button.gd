@@ -1,7 +1,7 @@
 extends Button
 
 
-onready var cursetimer = $"/root/Node2D/Fionna/Body/CurseTimer"
+@onready var cursetimer = $"/root/Node2D/Fionna/Body/CurseTimer"
 
 
 

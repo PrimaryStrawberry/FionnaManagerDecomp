@@ -1,24 +1,24 @@
-extends AnimatedSprite
+extends AnimatedSprite2D
 
-onready var exhale = 0
-onready var timer = get_node("Timer")
-onready var passivetimer = get_node("PassiveTimer")
-onready var dispatchtimer = get_node("Missions/ReturnDelay")
-onready var growthspurt = get_node("Growth")
-onready var growthtimer = get_node("Growth/GrowthPeak")
-onready var burstbounce = get_node("/root/Node2D/Fionna/Body/BustContainer/Bust/Bounce")
+@onready var exhale = 0
+@onready var timer = get_node("Timer")
+@onready var passivetimer = get_node("PassiveTimer")
+@onready var dispatchtimer = get_node("Missions/ReturnDelay")
+@onready var growthspurt = get_node("Growth")
+@onready var growthtimer = get_node("Growth/GrowthPeak")
+@onready var burstbounce = get_node("/root/Node2D/Fionna/Body/BustContainer/Bust/Bounce")
 
 
-onready var curseicon = $"/root/Node2D/Fionna/BoobCurse/AnimationPlayer"
-onready var cursetimer = get_node("CurseTimer")
-onready var musclecursetimer = get_node("MuscleCursePlayer/MuscleCurseTimer")
-onready var musclecurseanim = get_node("MuscleCursePlayer")
+@onready var curseicon = $"/root/Node2D/Fionna/BoobCurse/AnimationPlayer"
+@onready var cursetimer = get_node("CurseTimer")
+@onready var musclecursetimer = get_node("MuscleCursePlayer/MuscleCurseTimer")
+@onready var musclecurseanim = get_node("MuscleCursePlayer")
 #onready var musclecursedelay = get_node("MuscleCursePlayer/MuscleCurseDelay") this node just flat out did not exist.
-onready var curse_boob = 2
-onready var curse_muscle = 0
+@onready var curse_boob = 2
+@onready var curse_muscle = 0
 var curse_chance = 0
 
-export  var strength = 32
+@export  var strength = 32
 
 
 

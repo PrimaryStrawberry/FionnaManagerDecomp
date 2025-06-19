@@ -1,6 +1,6 @@
 extends Node
 
-onready var dispatchtimer = get_node("ReturnDelay")
+@onready var dispatchtimer = get_node("ReturnDelay")
 
 var musclemission = 0
 var fatmission = 0

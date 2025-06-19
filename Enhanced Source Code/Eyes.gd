@@ -1,4 +1,4 @@
-extends AnimatedSprite
+extends AnimatedSprite2D
 
 
 #onready var updatetimer = get_node("UpdateTimer")
